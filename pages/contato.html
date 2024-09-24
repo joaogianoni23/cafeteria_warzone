@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Zone</title>
-    <link rel="stylesheet" href="/css/global.css">
+    <title>Contato - Cafeteria Especial</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4b2e2e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #4b2e2e;
+            margin-top: 20px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4b2e2e;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4b2e2e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #3d2424;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b2e2e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Cafeteria Warzone</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html" style="color: white;">Home</a></li>
+                <li><a href="./cardapio.html" style="color: white;">Cardápio</a></li>
+                <li><a href="./contato.html" style="color: white;">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+    <main>
+        <form>
+            <h2>Entre em Contato</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </main>
+    <footer class="footer-contato">
+        <p>© 2024 Cafeteria Especial. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
